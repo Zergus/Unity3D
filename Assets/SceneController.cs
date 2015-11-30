@@ -13,7 +13,6 @@ public class SceneController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (_enemy == null) {
-		
 			_enemy = Instantiate(enemyPrefab) as GameObject;
 			_enemy.transform.position = new Vector3(13.5f, 5.0f, 0.0f);
 			float angle = Random.Range(0, 360);
